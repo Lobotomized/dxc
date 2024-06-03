@@ -1,0 +1,6 @@
+node_modules
+server/node_modules
+client/node_modules
+
+In the app there are two screens. To change between them click Vendor / Admin. Click the Admin to create, delete or edit a product. 
+Click Vendor to insert coins or buy a product.

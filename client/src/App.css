@@ -1,0 +1,190 @@
+:root {
+  --primary-color: #007bff; /* Bootstrap blue */
+  --border-color: #ccc;
+  --text-color: black; /* Default text color */
+  --text-color-white:white;
+  --margin: 20px; /* Variable for consistent margins */
+
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  padding: 20px;
+  font-family: sans-serif;
+}
+
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.product-card {
+  border: 1px solid var(--border-color);
+  padding: 15px;
+  width: 300px;
+  text-align: center; 
+}
+
+.product-image {
+  width: 100%;
+  height: 200px; 
+  object-fit: cover; 
+  margin-bottom: 10px;
+}
+
+.product-price {
+  font-weight: bold;
+}
+
+.new-product-form {
+  border: 1px solid var(--border-color);
+  padding: 15px;
+  width: 300px;
+}
+
+.new-product-form div {
+  margin-bottom: 10px;
+}
+
+.new-product-form label {
+  display: block; 
+  margin-bottom: 5px;
+  color: var(--text-color);
+}
+
+.new-product-form input,
+.new-product-form textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  box-sizing: border-box; 
+  color: var(--text-color);
+}
+
+.new-product-form button {
+  background-color: var(--primary-color); 
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.edit-product-form {
+  display: flex;
+  flex-direction: column; 
+}
+
+.edit-product-form div {
+  margin-bottom: 10px;
+}
+
+.edit-product-form label {
+  display: block;
+  margin-bottom: 5px;
+  color: var(--text-color);
+}
+
+.edit-product-form input,
+.edit-product-form textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  box-sizing: border-box; 
+  color: var(--text-color);
+}
+
+.margin-bottom{
+  margin-bottom:10px;
+}
+
+.product-buttons button { /* Add button styling to this new class */
+  margin-right: 5px; /* Add spacing between buttons */
+  padding: 5px 10px; /* Adjust button padding if needed */
+  background-color: var(--primary-color);
+  color: var(--text-color-white);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.product-buttons { /* Style the button container */
+  display: flex; /* Arrange buttons horizontally */
+  justify-content: space-around; /* Distribute buttons evenly */
+  margin-top: 10px; /* Add spacing above buttons */
+}
+
+.vendor-form {
+  border: 1px solid var(--border-color);
+  padding: 15px;
+  width: 300px;
+  margin-top: 20px; /* Add spacing between forms */
+}
+
+.coin-buttons {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 10px;
+}
+
+.coin-buttons button {
+  padding: 8px 12px;
+  background-color: var(--primary-color);
+  color: var(--text-color-white);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.status-message {
+  margin-bottom: 10px;
+}
+
+.app-container {
+  display: flex; /* Enable flexbox for centering */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  min-height: 100vh; /* Make container at least viewport height */
+  width:100vw;
+}
+
+.app-content {
+  display: flex; /* Enable flexbox for column layout */
+  flex-direction: column; 
+  align-items: center;
+  max-width: 960px; /* Optional: limit maximum width */
+}
+
+.forms-container {
+  display: flex; /* Arrange forms horizontally */
+  justify-content: space-around;
+  gap: 20px;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: var(--margin); /* Space between navigation buttons */
+  margin-bottom: var(--margin); /* Margin below navigation */
+}
+
+nav button {
+  padding: 10px 15px;
+  background-color: var(--primary-color);
+  color: var(--text-color-white);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Add margin to all forms and the product list */
+.new-product-form, .vendor-form, .product-list {
+  margin-bottom: var(--margin); /* Consistent margin below each element */
+}
