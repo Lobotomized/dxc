@@ -126,8 +126,6 @@ function App() {
         <button onClick={() => setCurrentScreen("vendor")}>Vendor</button>
         <button onClick={() => setCurrentScreen("admin")}>Admin</button>
       </nav>
-      <h1>Product Catalog</h1>
-
       {currentScreen === "vendor" && (
           <>
             <p className="status-message" ref={statusMessageRef}>
