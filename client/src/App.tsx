@@ -79,10 +79,11 @@ function App() {
       console.log(changeBreakdown)
 
       setStatusMessage(
-        `${product.name} is bought. The change is ${Object.entries(changeBreakdown)
+        `${product.name} is bought. The change is: ${Object.entries(changeBreakdown)
           .filter(([_, count]) => count != undefined && count > 0)
           .map(([denomination, count]) => {
-           return `${count} ${denomination}$ coin` + (count && count > 1? "s" : "")
+           return `
+           ${count} ${denomination}$ coin` + (count && count > 1? "s" : "")
           })
           .join(', ')}.`
       );
